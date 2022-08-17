@@ -10,7 +10,9 @@ GLOBAL
     --bleu100: #1A62C6;
     --bleu10: #E9F0FA;
     --noir100: #242930;
+    --blanc10: #F6F9FD;
     --blanc: #FFF
+    --ff: 'Be Vietnam Pro', sans-serif
 }
 
 * {
@@ -19,25 +21,95 @@ GLOBAL
 
 /***********************************
 COLORS
+#root .v-application .grey--text
 ***********************************/
-#root .v-application .primary {
-    background: var(--rouge100) !important;
-    border-color: var(--rouge100) !important
+
+.v-main {
+	background: var(--blanc)!important
+}
+
+#root .v-application .primary--text,
+#root .v-application .teal--text.pb-2,
+#root .v-application .blue--text,
+#root .v-application .indigo--text
+ {
+    color: var(--noir100) !important;
+}
+
+#root .v-application .teal.lighten-5 {
+    background: var(--bleu10) !important;
+    border-color: var(--bleu10) !important
+}
+
+#root .v-application .teal,
+#root .v-application i.teal--text,
+#root .v-application .teal--text.text--darken-2 {
+color: var(--bleu100) !important;
+}
+
+#root .v-application i.indigo--text {
+color: var(--bleu100) !important
+}
+
+#root .v-application .blue-grey--text,
+#root .v-application .grey--text.text--darken-1 {
+	color: var(--noir100) !important;
+	caret-color: var(--noir100) !important
+}
+
+#root .v-application .primary i {
+	color: var(--blanc);
 }
 
 #root .v-application .blue.darken-3 {
-    background: var(--rouge120) !important;
-    border-color: var(--rouge120) !important
+	background: var(--noir100) !important;
+	border-color: var(--noir100) !important
 }
 
 #root .v-application .blue.darken-2 {
-    background: var(--rouge110) !important;
-    border-color: var(--rouge110) !important
+	background: yellow !important;
+	border-color: yellow !important
 }
 
+#root .v-application .primary,
+#root .v-application .blue-grey.darken-2 {
+    background: var(--bleu100) !important;
+    border-color: var(--bleu100) !important
+}
+
+#root .v-application .blue.darken-3 {
+    background: var(--bleu100) !important;
+    border-color: var(--bleu100) !important
+}
+
+#root .v-application .blue.darken-2 {
+    background: var(--bleu100) !important;
+    border-color: var(--bleu100) !important
+}
+
+#root .v-application .grey.darken-5,
+#root .v-application .grey.darken-4-d3,
+#root .v-application .grey.darken-4-l3,
+#root .v-application .grey.darken-4-d4,
+#root .v-application .teal.darken-1 {
+	background-color: var(--noir100) !important;
+    border-color: var(--noir100) !important
+}
 /***********************************
 HEADER
 ***********************************/
+
+#app > div.v-application--wrap > main > div > div.container.grey.pa-0.container--fluid.lighten-4 > div {
+  height: 280px !important;
+}
+
+#app > div.v-application--wrap > main > div > div.container.grey.pa-0.container--fluid.lighten-4 > div > div > div.headline.grey--text.text--darken-3 {
+  font-size: 3.5rem !important;
+  font-weight: 500;
+  line-height: 4.25rem;
+  color: var(--noir100);
+}
+
 #discussion .comments-header i,
 .v-main .contents,
 .v-main .contents h1,
@@ -58,40 +130,43 @@ HEADER
 .v-main .contents h1,
 .v-main .contents h2,
 .v-main .contents h3,
-.v-main .contents h4,
-.v-main .contents h5,
-.v-main .contents h6 {
-    font-weight: 600
+.v-main .contents h4 {
+    font-weight: 500;
+    letter-spacing: -2px
 }
 
 .v-main .contents h1 {
-    font-size: 4.5rem;
-    line-height: 5.375rem
+	font-size: 4.5rem;
+	line-height: 5.375rem
 }
 
 .v-main .contents h2 {
-    font-size: 4rem;
-    line-height: 4.75rem
+	font-size: 2.125rem;
+	line-height: 2.75rem;
+    margin-top: 30px
 }
 
 .v-main .contents h3 {
-    font-size: 3.5rem;
-    line-height: 4.25rem
+	font-size: 1.5rem;
+	line-height: 2.25rem
 }
 
 .v-main .contents h4 {
-    font-size: 2.125rem;
-    line-height: 2.75rem
+	font-size: 1.25rem;
+	line-height: 1.75rem
 }
 
 .v-main .contents h5 {
-    font-size: 1.75rem;
-    line-height: 2.25rem
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+letter-spacing: -2px;
+font-weight: 400;
 }
 
 .v-main .contents h6 {
-    font-size: 1.25rem;
-    line-height: 1.75rem
+	font-size: 1rem;
+letter-spacing: -2px;
+font-weight: 400;
 }
 
 .v-main .contents h1::after,
@@ -110,12 +185,12 @@ LINKS
 .v-main .contents a.is-external-link::after,
 .v-main .contents a.is-internal-link.is-invalid-page :root .theme--dark,
 .v-main .contents blockquote::before {
-    color: var(--rouge100)
+    color: var(--bleu100)
 }
 
 .v-main .contents a.is-external-link,
 .v-main .contents a.is-internal-link {
-    color: var(--rouge100);
+    color: var(--bleu100);
     position: relative;
     text-decoration: none
 }
@@ -128,12 +203,19 @@ LINKS
     left: 0;
     bottom: -2px;
     content: "";
-    background: var(--rouge100)
+    background: var(--bleu100)
 }
 
 /***********************************
 CONTENT
 ***********************************/
+#root .v-application .overline,
+#root .v-application .v-btn__content {
+	text-transform: none;
+	letter-spacing: 0 !important;
+	font-family: var(--ff) !important;
+}
+
 .v-main .contents p {
     line-height: 28px
 }
@@ -157,9 +239,6 @@ CONTENT
     margin: 1rem 2rem;
     background: 0 0;
     color: var(--noir100);
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2.5rem
 }
 
 .v-main .contents ul:not(.tabset-tabs),
@@ -211,8 +290,6 @@ COMMENTS
 BUTTONS
 ***********************************/
 #discussion button {
-    background: var(--rouge10) !important;
-    color: var(--rouge100) !important;
     border-radius: 100px !important;
     letter-spacing: 0 !important
 }
