@@ -1,7 +1,6 @@
 /***********************************
 GLOBAL
 ***********************************/
-
 :root {
     --rouge120: #D80E41;
     --rouge110: #E20D42;
@@ -11,29 +10,27 @@ GLOBAL
     --bleu10: #E9F0FA;
     --noir100: #242930;
     --blanc10: #F6F9FD;
-    --blanc: #FFF
+    --blanc: #FFF;
     --ff: 'Be Vietnam Pro', sans-serif
 }
 
-* {
-    font-family: 'Be Vietnam Pro', sans-serif !important
+*, #root {
+    font-family: var(--ff) !important;
 }
+
 
 /***********************************
 COLORS
-#root .v-application .grey--text
 ***********************************/
-
 .v-main {
-	background: var(--blanc)!important
+    background: var(--blanc) !important
 }
 
-#root .v-application .primary--text,
-#root .v-application .teal--text.pb-2,
 #root .v-application .blue--text,
-#root .v-application .indigo--text
- {
-    color: var(--noir100) !important;
+#root .v-application .indigo--text,
+#root .v-application .primary--text,
+#root .v-application .teal--text.pb-2 {
+    color: var(--noir100) !important
 }
 
 #root .v-application .teal.lighten-5 {
@@ -42,74 +39,78 @@ COLORS
 }
 
 #root .v-application .teal,
-#root .v-application i.teal--text,
-#root .v-application .teal--text.text--darken-2 {
-color: var(--bleu100) !important;
+#root .v-application .teal--text.text--darken-2,
+#root .v-application i.teal--text {
+    color: var(--bleu100) !important
 }
 
 #root .v-application i.indigo--text {
-color: var(--bleu100) !important
+    color: var(--bleu100) !important
 }
 
 #root .v-application .blue-grey--text,
 #root .v-application .grey--text.text--darken-1 {
-	color: var(--noir100) !important;
-	caret-color: var(--noir100) !important
+    color: var(--noir100) !important;
+    caret-color: var(--noir100) !important
 }
 
 #root .v-application .primary i {
-	color: var(--blanc);
+    color: var(--blanc)
 }
 
 #root .v-application .blue.darken-3 {
-	background: var(--noir100) !important;
-	border-color: var(--noir100) !important
-}
-
-#root .v-application .blue.darken-2 {
-	background: yellow !important;
-	border-color: yellow !important
-}
-
-#root .v-application .primary,
-#root .v-application .blue-grey.darken-2 {
-    background: var(--bleu100) !important;
-    border-color: var(--bleu100) !important
-}
-
-#root .v-application .blue.darken-3 {
-    background: var(--bleu100) !important;
-    border-color: var(--bleu100) !important
-}
-
-#root .v-application .blue.darken-2 {
-    background: var(--bleu100) !important;
-    border-color: var(--bleu100) !important
-}
-
-#root .v-application .grey.darken-5,
-#root .v-application .grey.darken-4-d3,
-#root .v-application .grey.darken-4-l3,
-#root .v-application .grey.darken-4-d4,
-#root .v-application .teal.darken-1 {
-	background-color: var(--noir100) !important;
+    background: var(--noir100) !important;
     border-color: var(--noir100) !important
 }
-/***********************************
-HEADER
-***********************************/
 
+#root .v-application .blue.darken-2 {
+    background: #ff0 !important;
+    border-color: #ff0 !important
+}
+
+#root .v-application .blue-grey.darken-2,
+#root .v-application .primary {
+    background: var(--bleu100) !important;
+    border-color: var(--bleu100) !important
+}
+
+#root .v-application .blue.darken-3 {
+    background: var(--bleu100) !important;
+    border-color: var(--bleu100) !important
+}
+
+#root .v-application .blue.darken-2 {
+    background: var(--bleu100) !important;
+    border-color: var(--bleu100) !important
+}
+
+#root .v-application .grey.darken-4-d3,
+#root .v-application .grey.darken-4-d4,
+#root .v-application .grey.darken-4-l3,
+#root .v-application .grey.darken-5,
+#root .v-application .teal.darken-1 {
+    background-color: var(--noir100) !important;
+    border-color: var(--noir100) !important
+}
+
+/***********************************
+HERO
+***********************************/
 #app > div.v-application--wrap > main > div > div.container.grey.pa-0.container--fluid.lighten-4 > div {
-  height: 280px !important;
+    height: 280px !important
 }
 
 #app > div.v-application--wrap > main > div > div.container.grey.pa-0.container--fluid.lighten-4 > div > div > div.headline.grey--text.text--darken-3 {
-  font-size: 3.5rem !important;
-  font-weight: 500;
-  line-height: 4.25rem;
-  color: var(--noir100);
+    font-size: 3.5rem !important;
+    font-weight: 500;
+    line-height: 4.25rem;
+    color: var(--noir100);
+    font-family: var(--ff) !important;
 }
 
+/***********************************
+HEADER
+***********************************/
 #discussion .comments-header i,
 .v-main .contents,
 .v-main .contents h1,
@@ -136,37 +137,37 @@ HEADER
 }
 
 .v-main .contents h1 {
-	font-size: 4.5rem;
-	line-height: 5.375rem
+    font-size: 4.5rem;
+    line-height: 5.375rem
 }
 
 .v-main .contents h2 {
-	font-size: 2.125rem;
-	line-height: 2.75rem;
+    font-size: 2.125rem;
+    line-height: 2.75rem;
     margin-top: 30px
 }
 
 .v-main .contents h3 {
-	font-size: 1.5rem;
-	line-height: 2.25rem
+    font-size: 1.5rem;
+    line-height: 2.25rem
 }
 
 .v-main .contents h4 {
-	font-size: 1.25rem;
-	line-height: 1.75rem
+    font-size: 1.25rem;
+    line-height: 1.75rem
 }
 
 .v-main .contents h5 {
-	font-size: 1.1rem;
-	line-height: 1.5rem;
-letter-spacing: -2px;
-font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: -2px;
+    font-weight: 400
 }
 
 .v-main .contents h6 {
-	font-size: 1rem;
-letter-spacing: -2px;
-font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: -2px;
+    font-weight: 400
 }
 
 .v-main .contents h1::after,
@@ -206,14 +207,15 @@ LINKS
     background: var(--bleu100)
 }
 
+
 /***********************************
 CONTENT
 ***********************************/
 #root .v-application .overline,
 #root .v-application .v-btn__content {
-	text-transform: none;
-	letter-spacing: 0 !important;
-	font-family: var(--ff) !important;
+    text-transform: none;
+    letter-spacing: 0 !important;
+    font-family: var(--ff) !important
 }
 
 .v-main .contents p {
@@ -226,19 +228,12 @@ CONTENT
     background-color: var(--noir100)
 }
 
-.v-main .contents blockquote:root .theme--dark,
-.v-main .contents hr:root .theme--dark
-
-&
-{
-    background-color: #00f
-}
 .v-main .contents blockquote {
     border-left: 2.5px solid var(--noir100);
     border-radius: 0;
     margin: 1rem 2rem;
     background: 0 0;
-    color: var(--noir100);
+    color: var(--noir100)
 }
 
 .v-main .contents ul:not(.tabset-tabs),
@@ -254,7 +249,6 @@ CONTENT
 .v-main .contents code {
     background-color: red;
     padding: 0 5px;
-    color: mc('indigo', '800');
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     font-size: 1rem;
@@ -264,6 +258,7 @@ CONTENT
 .v-main .contents .prismjs {
     background: var(--noir100)
 }
+
 
 /***********************************
 COMMENTS
