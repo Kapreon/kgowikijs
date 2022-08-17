@@ -1,0 +1,202 @@
+// ---------------------------------
+// GLOBAL
+// ---------------------------------
+
+:root {
+  --rouge120: #D80E41;
+  --rouge110: #E20D42;
+  --rouge100: #EC0B43;
+  --rouge10: #FEE7ED;
+  --bleu100: #1A62C6;
+  --bleu10: #E9F0FA;
+  --noir100: #242930;
+  --blanc: #FFF
+}
+* {
+  font-family: 'Be Vietnam Pro',sans-serif!important
+}
+
+// ---------------------------------
+// COLORS
+// ---------------------------------
+#root .v-application .primary {
+  background: var(--rouge100)!important;
+  border-color: var(--rouge100)!important
+}
+#root .v-application .blue.darken-3 {
+  background: var(--rouge120)!important;
+  border-color: var(--rouge120)!important
+}
+#root .v-application .blue.darken-2 {
+  background: var(--rouge110)!important;
+  border-color: var(--rouge110)!important
+}
+
+// ---------------------------------
+// HEADERS
+// ---------------------------------
+#discussion .comments-header i,
+.v-main .contents,
+.v-main .contents h1,
+.v-main .contents h2,
+.v-main .contents h2:root .theme--dark,
+.v-main .contents h3,
+.v-main .contents h3:root .theme--dark,
+.v-main .contents h4,
+.v-main .contents h4:root .theme--dark,
+.v-main .contents h5,
+.v-main .contents h5:root .theme--dark,
+.v-main .contents h6,
+.v-main .contents h6 + hr.footnotes-sep,
+.v-main .contents h6:root .theme--dark {
+  color: var(--noir100)
+}
+
+.v-main .contents h1,
+.v-main .contents h2,
+.v-main .contents h3,
+.v-main .contents h4,
+.v-main .contents h5,
+.v-main .contents h6 {
+  font-weight: 600
+}
+.v-main .contents h1 {
+  font-size: 4.5rem;
+  line-height: 5.375rem
+}
+.v-main .contents h2 {
+  font-size: 4rem;
+  line-height: 4.75rem
+}
+.v-main .contents h3 {
+  font-size: 3.5rem;
+  line-height: 4.25rem
+}
+.v-main .contents h4 {
+  font-size: 2.125rem;
+  line-height: 2.75rem
+}
+.v-main .contents h5 {
+  font-size: 1.75rem;
+  line-height: 2.25rem
+}
+.v-main .contents h6 {
+  font-size: 1.25rem;
+  line-height: 1.75rem
+}
+.v-main .contents h1::after,
+.v-main .contents h2::after,
+.v-main .contents h3::after,
+.v-main .contents h4::after,
+.v-main .contents h5::after,
+.v-main .contents h6::after {
+  display: none
+}
+
+// ---------------------------------
+// LINKS
+// ---------------------------------
+.v-main .contents a,
+.v-main .contents a.is-external-link::after,
+.v-main .contents a.is-internal-link.is-invalid-page :root .theme--dark,
+.v-main .contents blockquote::before {
+  color: var(--rouge100)
+}
+.v-main .contents a.is-external-link,
+.v-main .contents a.is-internal-link {
+  color: var(--rouge100);
+  position: relative;
+  text-decoration: none
+}
+.v-main .contents a.is-external-link::before,
+.v-main .contents a.is-internal-link::before {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: -2px;
+  content: "";
+  background: var(--rouge100)
+}
+
+// ---------------------------------
+// CONTENT
+// ---------------------------------
+.v-main .contents p {
+  line-height: 28px
+}
+.v-main .contents hr {
+  height: 1px;
+  border: none;
+  background-color: var(--noir100)
+}
+
+.v-main .contents blockquote:root .theme--dark,
+.v-main .contents hr:root .theme--dark & {
+  background-color: #00f
+}
+.v-main .contents blockquote {
+  border-left: 2.5px solid var(--noir100);
+  border-radius: 0;
+  margin: 1rem 2rem;
+  background: 0 0;
+  color: var(--noir100);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem
+}
+.v-main .contents ul:not(.tabset-tabs),
+.v-main .contents ul:not(.tabset-tabs):not(.contains-task-list) {
+  list-style: none
+}
+.v-main .contents ul:not(.tabset-tabs):not(.contains-task-list) > li::before {
+  content: '\25CF';
+  color: var(--noir100)
+}
+.v-main .contents code {
+  background-color: red;
+  padding: 0 5px;
+  color: mc('indigo', '800');
+  font-family: 'Roboto Mono',monospace;
+  font-weight: 400;
+  font-size: 1rem;
+  box-shadow: none
+}
+.v-main .contents .prismjs {
+  background: var(--noir100)
+}
+
+// ---------------------------------
+// COMMENTS
+// ---------------------------------
+.comments-container {
+  border-radius: 6px;
+  border: 1px solid #bdbfc1
+}
+#discussion .comments-header {
+  color: var(--noir100);
+  padding: 16px 20px;
+  border-radius: 6px 6px 0 0;
+  background: var(--blanc);
+  border-bottom: 1px solid #bdbfc1
+}
+#discussion .comments-main {
+  background-color: var(--blanc);
+  border-radius: 0 0 7px 7px
+}
+
+// ---------------------------------
+// BUTTONS
+// ---------------------------------
+#discussion button {
+  background: var(--rouge10)!important;
+  color: var(--rouge100)!important;
+  border-radius: 100px!important;
+  letter-spacing: 0!important
+}
+#discussion button i::before {
+  font-size: 16px!important
+}
+#discussion button.v-icon {
+  padding: 10px
+}
